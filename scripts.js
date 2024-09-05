@@ -14,7 +14,6 @@ form.addEventListener("submit", (event) => {
   }
   
   // Check if inputs are valid numbers
- 
   const dividendNum = Number(dividend);
   const dividerNum = Number(divider);
 
@@ -25,5 +24,12 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
- 
+  // Check for division by zero is valid
+  if (dividerNum === 0) {
+    result.innerText = "Division not performed. Invalid number provided. Try again.";
+    console.error("Error: Division by zero", new Error().stack);
+    return;
+  }
+
+  
 });
