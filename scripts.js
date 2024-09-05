@@ -31,5 +31,8 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  
+  // Perform the division and display result
+  // Returns the greatest integer less than or equal to its numeric argument.
+  const data = Math.floor(dividendNum / dividerNum);
+  result.innerText = data;
 });
