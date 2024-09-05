@@ -15,5 +15,8 @@ form.addEventListener("submit", (event) => {
   
   // Check if inputs are valid numbers
  
- 
+  const dividendNum = Number(dividend);
+  const dividerNum = Number(divider);
+
+  
 });
