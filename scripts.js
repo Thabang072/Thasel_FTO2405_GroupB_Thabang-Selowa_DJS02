@@ -18,5 +18,12 @@ form.addEventListener("submit", (event) => {
   const dividendNum = Number(dividend);
   const dividerNum = Number(divider);
 
-  
+  //Returns a Boolean value that indicates whether a value is the reserved value NaN (not a number)
+  if (isNaN(dividendNum) || isNaN(dividerNum)) {
+    document.body.innerHTML = "Something critical went wrong. Please reload the page";
+    console.error("Error: Invalid input types", new Error().stack);
+    return;
+  }
+
+ 
 });
